@@ -18,6 +18,7 @@ Example: model "People" with the data:
 : People.objects.all() will return 4 rows
 -> useful when using annotations:
 People.objects.values_list('name', Sum('age')) -> will return:
+
 +-------+---------+
 |  name | age_sum |
 +-------+---------+
@@ -25,6 +26,7 @@ People.objects.values_list('name', Sum('age')) -> will return:
 |  Henk |   52    |
 |  Pluk |   11    |
 +-------+---------+
+
 -> age of Henk has been summed, and returned in a single row
 -> .distinct() if different -> it only applies after the annotations
 https://docs.djangoproject.com/en/4.0/ref/models/querysets/#values
