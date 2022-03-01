@@ -1,3 +1,8 @@
+---
+title: "Difference between .values() and .values_list()"
+date: 2022-03-01
+---
+
 .values() and .values_list() translate to a GROUP BY query. 
 Means: the rows with duplicate values will be grouped into a single value.
 Example: model "People" with the data:
